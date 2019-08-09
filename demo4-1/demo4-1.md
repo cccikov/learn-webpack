@@ -64,10 +64,9 @@ webpack-dev-server --open 'Firefox' ## 启动服务并通过火狐浏览器打�
 
 ### 4.webpack-dev-middleware
 
-webpack-dev-middleware 是一个容器(wrapper)，它可以把 webpack 处理后的文件传递给一个服务器(server)。
+webpack-dev-middleware 是一个容器(wrapper)，它可以把 webpack 处理后的文件传递给一个服务器(server)。对更改的文件进行监控，编译，但是编译没有文件写入磁盘，而是处理内存中的文件，编译后会传递服务器。
 
 webpack-dev-middleware 配合 express server 。其实 webpack-dev-server 也是使用了webpack-dev-middleware来实现，免去了express server部分。
-
 
 ``` diff
     output: {
@@ -76,9 +75,9 @@ webpack-dev-middleware 配合 express server 。其实 webpack-dev-server 也是
 +     publicPath: '/'
     }
 ```
+
 其中`publicPath`的为[公共路径(public path)](https://www.webpackjs.com/guides/public-path/)
 
 publicPath为项目的访问路径，如果设置为"/web"，那么通过"http://localhost:3000/web"访问项目。
 
-
-`server.js` 为 node express 服务的代码
+`server.js` 为 node express 服务的代码，仅仅是简单demo，仅启动服务，未实现重新加载(live reloading)
