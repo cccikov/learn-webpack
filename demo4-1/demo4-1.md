@@ -1,4 +1,4 @@
-# demo3-1
+# demo4-1
 
 [开发](https://www.webpackjs.com/guides/development/)
 
@@ -34,23 +34,39 @@ webpack --watch
 
 ### 3.webpack-dev-server
 
+[webpack-dev-server配置](https://webpack.js.org/configuration/dev-server/#devserver)
+
+[webpack-dev-server配置中文](https://www.webpackjs.com/configuration/dev-server/)
+
 webpack-dev-server 为你提供了一个简单的 web 服务器，并且能够实时重新加载(live reloading)。(web服务版观察模式)
 
 ``` javascript
 devServer: {
-  contentBase: './dist'
+  contentBase: './dist',
+},
+```
+
+其他配置
+
+``` javascript
+devServer: {
+  contentBase: './dist',
+  open: true, // 自动打开默认浏览器访问服务
+  open: "Firefox" // 打开火狐浏览
 },
 ```
 
 ``` bash
-webpack-dev-server --open
+webpack-dev-server ## 启动服务 调用devServer配置
+webpack-dev-server --open ## 启动服务并通过默认浏览器打开 相当于设置 devServer.open:true
+webpack-dev-server --open 'Firefox' ## 启动服务并通过火狐浏览器打开devServer.open:"Firefox"
 ```
 
 ### 4.webpack-dev-middleware
 
 webpack-dev-middleware 是一个容器(wrapper)，它可以把 webpack 处理后的文件传递给一个服务器(server)。
 
-webpack-dev-middleware 配合 express server 。
+webpack-dev-middleware 配合 express server 。其实 webpack-dev-server 也是使用了webpack-dev-middleware来实现，免去了express server部分。
 
 
 ``` diff
