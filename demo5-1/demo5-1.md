@@ -2,6 +2,8 @@
 
 [模块热替换](https://www.webpackjs.com/guides/hot-module-replacement/)
 
+[模块热替换 原版](https://webpack.js.org/guides/hot-module-replacement/)
+
 ### 修改 webpack-dev-server 配置
 
 要注意和 *demo4-1* 例子的区别，demo4-1是有改动的时候刷新页面来响应代码的变化；模块热替换是不会刷新页面的来响应代码变化的。
@@ -34,3 +36,23 @@ devServer: {
 hot 和 hotOnly 的区别是在某些模块不支持热更新的情况下，前者会自动刷新页面，后者不会刷新页面，而是在控制台输出热更新失败
 
 在 *demo5-1* 例子中，如果采用的是hot模式， 修改 `print.js` 会热替换， 修改 `index.js` 会刷新页面；如果采用的是hot模式， 修改 `print.js` 会热替换， 修改 `index.js` 没有任何反应
+
+
+## plugins
+
+在 https://www.webpackjs.com/ 的指南中，热替换是需要添加下面两个插件的，但是英文官网是不需要的，个人
+
+``` diff
++  new webpack.NamedModulesPlugin(),
++  new webpack.HotModuleReplacementPlugin()
+```
+
+HotModuleReplacementPlugin 是一个热替换模块。
+
+NamedModulesPlugin 当开启 HMR 的时候使用该插件会显示模块的相对路径。就是在浏览器控制台
+
+```
+[HMR] Updated modules:
+[HMR]  - ./src/print.js
+[HMR] App is up to date.
+```

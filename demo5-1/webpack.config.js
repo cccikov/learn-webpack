@@ -21,9 +21,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'webpack热替换'
         }),
-        /* demo5 新增 */
-        // new webpack.NamedModulesPlugin(),
-        // new webpack.HotModuleReplacementPlugin()
     ],
     output: {
         filename: '[name].bundle.js',
