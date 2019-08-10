@@ -40,14 +40,14 @@ hot 和 hotOnly 的区别是在某些模块不支持热更新的情况下，前�
 
 ## plugins
 
-在 https://www.webpackjs.com/ 的指南中，热替换是需要添加下面两个插件的，但是英文官网是不需要的，个人
+在 https://www.webpackjs.com/ 的指南中，热替换是需要添加下面两个插件的，但是英文官网是不需要的。
 
 ``` diff
 +  new webpack.NamedModulesPlugin(),
 +  new webpack.HotModuleReplacementPlugin()
 ```
 
-HotModuleReplacementPlugin 是一个热替换模块。
+HotModuleReplacementPlugin 是一个热替换模块。应该是新版的webpack-dev-server已经自带了吧。
 
 NamedModulesPlugin 当开启 HMR 的时候使用该插件会显示模块的相对路径。就是在浏览器控制台
 
