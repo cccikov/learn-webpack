@@ -6,6 +6,8 @@
 
 ### 通过 Node.js API
 
+热替换：node.js + express + webpack-dev-server
+
 如果您通过Node.js API使用dev-server，devServer则将忽略选项。将选项作为第二个参数传递：`new WebpackDevServer(compiler, {...})`。
 
 通过 Node.js API 感觉反应比直接调用webpack-dev-server慢。

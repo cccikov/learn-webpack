@@ -6,6 +6,8 @@
 
 ### 通过 Node.js API
 
+热替换采用:node.js + express + webpack-hot-middleware + webpack-hot-middleware
+
 ```
 npm run server
 ```
