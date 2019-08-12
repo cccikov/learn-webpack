@@ -49,7 +49,7 @@ hot 和 hotOnly 的区别是在某些模块不支持热更新的情况下，前�
 +  new webpack.HotModuleReplacementPlugin()
 ```
 
-HotModuleReplacementPlugin 是一个热替换模块。应该是新版的webpack-dev-server已经自带了吧。
+HotModuleReplacementPlugin 是一个热替换模块。应该是新版的 webpack-dev-server 已经自带了吧。如果已经通过 HotModuleReplacementPlugin 启用了模块热替换(Hot Module Replacement)，则它的接口将被暴露在 module.hot 属性下面。
 
 NamedModulesPlugin 当开启 HMR 的时候使用该插件会显示模块的相对路径。就是在浏览器控制台
 
