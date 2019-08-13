@@ -6,6 +6,10 @@
 
 热替换：利用 webpack 的用于开发的服务器 webpack-dev-server
 
+``` bash
+    npm start
+```
+
 ### 修改 webpack-dev-server 配置
 
 要注意和 *demo4-1* 例子的区别，demo4-1是有改动的时候刷新页面来响应代码的变化；模块热替换是不会刷新页面的来响应代码变化的。
