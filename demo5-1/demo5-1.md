@@ -62,3 +62,13 @@ NamedModulesPlugin 当开启 HMR 的时候使用该插件会显示模块的相�
 [HMR]  - ./src/print.js
 [HMR] App is up to date.
 ```
+
+
+ps:
+
+```
+"webpack": "^2.2.1",
+"webpack-dev-server": "^2.11.2",
+```
+
+经发现，其他项目的`webpack`和`webpack-dev-server`版本较低时还是需要加上 `new webpack.NamedModulesPlugin()`
