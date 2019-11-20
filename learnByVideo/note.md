@@ -2,6 +2,10 @@
 
 从基础到实战 手把手带你掌握新版Webpack4.0完整 学习笔记
 
+## 2-1 笔记
+
+`npx webpack index.js`
+
 ## 2-3 笔记
 
 `npm init -y` 自动配置package.json
