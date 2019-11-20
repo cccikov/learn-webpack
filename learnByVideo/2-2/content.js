@@ -5,4 +5,4 @@ function Content() {
     root.append(content);
 }
 
-export default Content;
+module.exports = Content;

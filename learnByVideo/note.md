@@ -6,12 +6,18 @@
 
 `npx webpack index.js`
 
+## 2-2 笔记
+
+`npx webpack index.js`
+
+视频结尾有对文档进行一些介绍
+
 ## 2-3 笔记
 
 `npm init -y` 自动配置package.json
 `npm info webpack` 查看webpack版本信息
 
-推荐在项目中安装webpack，使用`npx`运行项目中的模块
+推荐在项目中安装webpack，使用`npx`运行项目中的指令
 
 ## 2-4 笔记
 
