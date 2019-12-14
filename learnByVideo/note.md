@@ -53,3 +53,30 @@
 ```
     npm run build
 ```
+
+## 2-5 笔记
+
+> 解析打包时，终端输出内容
+
+1. main
+
+    ``` javascript
+        entry: "./src/index.js",
+    ```
+
+    是下面的简写
+
+    ``` javascript
+        entry: {
+            main: "./src/index.js"
+        },
+    ```
+
+2. 模式
+
+    设置模式后，在打包时，终端就不会输出警告
+
+    ``` javascript
+        mode:"production" // 默认 生产模式，压缩输出文件
+        mode:"development" // 开发模式，不压缩输出文件，易于调试，知道报错出现在具体哪个模块（文件）中
+    ```
