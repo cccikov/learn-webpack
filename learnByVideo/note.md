@@ -4,6 +4,8 @@
 
 ## 2-1 笔记
 
+局部安装webpack，不推荐全局安装是因为不同项目可能需要不同的webpack版本
+
 `npx webpack index.js`
 
 ## 2-2 笔记
@@ -42,6 +44,12 @@
 
 用 `package.json` 里面的 `script` 里面配置命令简化运行命令，先从当前项目找指令，相当于`npx`；找不到再从全局找指令
 
+“webpack-cli” 是为了让我们可以在命令行中运行 `webpack` 这个命令
+
 ## 2-4-2 笔记
 
 > 模块化
+
+```
+    npm run build
+```
