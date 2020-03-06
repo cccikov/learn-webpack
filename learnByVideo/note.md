@@ -80,3 +80,25 @@
         mode:"production" // 默认 生产模式，压缩输出文件
         mode:"development" // 开发模式，不压缩输出文件，易于调试，知道报错出现在具体哪个模块（文件）中
     ```
+
+
+## 3-1 Loader
+
+1. 配置项
+
+    * https://webpack.js.org/concepts/
+    * https://webpack.js.org/configuration/ 配置项
+    * https://webpack.js.org/plugins/ 官方推荐插件
+    * https://webpack.js.org/loaders/ 官方loader
+
+2. loader
+
+    打包图片
+
+    `npm run build` 命令
+
+    webpack 默认配置下只能打包js文件。要打包其他类型文件，需要配置 `module` 字段。
+
+    配置 `module.rules` 打包规则组成的数组
+
+    每条规则 `Rule`
