@@ -4,6 +4,8 @@ let Content = require('./content');
 
 import chrome_es6 from "./chrome.png";
 let chrome_commonJS = require("./chrome.png");
+console.log(chrome_es6)
+console.log(chrome_commonJS)
 
 new Header();
 new Sidebar();

@@ -102,3 +102,25 @@
     配置 `module.rules` 打包规则组成的数组
 
     每条规则 `Rule`
+
+    [module](https://webpack.js.org/configuration/module/)
+    [module.rules](https://webpack.js.org/configuration/module/#modulerules)
+    [Rule](https://webpack.js.org/configuration/module/#rule)
+
+    ``` javascript
+    rules: [{
+        test: /\.png$/,
+        use: {
+            loader: 'file-loader'
+        }
+    }] // 打包规则
+    ```
+
+    ``` javascript
+    {
+        test: /\.png$/,
+        use: {
+            loader: 'file-loader'
+        }
+    } // 为rules里面其中一条rule
+    ```
