@@ -80,3 +80,9 @@
         mode:"production" // 默认 生产模式，压缩输出文件
         mode:"development" // 开发模式，不压缩输出文件，易于调试，知道报错出现在具体哪个模块（文件）中
     ```
+
+## 3-1 Loader
+
+> Loader
+
+file-loader 返回 file的路径 可以直接引入file，得到路径，用变量存储，就不用纠结js中路径的问题
