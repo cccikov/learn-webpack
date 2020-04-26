@@ -4,10 +4,17 @@
 const path = require('path');
 
 module.exports = {
-    // mode: "production", // production development
     mode: "development", // production development
     entry: { // 入口文件，从这里开始打包
         main: "./src/index.js"
+    },
+    module: {
+        rules: [{
+            test: /\.png$/,
+            use: {
+                loader: 'file-loader'
+            }
+        }] // 打包规则
     },
     output: { // 打包文件输出目录
         filename: "bundle.js",

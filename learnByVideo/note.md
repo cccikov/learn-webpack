@@ -83,6 +83,47 @@
 
 ## 3-1 Loader
 
+1. 配置项
+
+    * https://webpack.js.org/concepts/
+    * https://webpack.js.org/configuration/ 配置项
+    * https://webpack.js.org/plugins/ 官方推荐插件
+    * https://webpack.js.org/loaders/ 官方loader
+
+2. loader
+
+    打包图片
+
+    `npm run build` 命令
+
+    webpack 默认配置下只能打包js文件。要打包其他类型文件，需要配置 `module` 字段。
+
+    配置 `module.rules` 打包规则组成的数组
+
+    每条规则 `Rule`
+
+    [module](https://webpack.js.org/configuration/module/)
+    [module.rules](https://webpack.js.org/configuration/module/#modulerules)
+    [Rule](https://webpack.js.org/configuration/module/#rule)
+
+    ``` javascript
+    rules: [{
+        test: /\.png$/,
+        use: {
+            loader: 'file-loader'
+        }
+    }] // 打包规则
+    ```
+
+    ``` javascript
+    {
+        test: /\.png$/,
+        use: {
+            loader: 'file-loader'
+        }
+    } // 为rules里面其中一条rule
+    ```
+
 > Loader
 
 file-loader 返回 file的路径 可以直接引入file，得到路径，用变量存储，就不用纠结js中路径的问题
