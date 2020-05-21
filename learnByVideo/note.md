@@ -18,6 +18,7 @@
 
 `npm init -y` 自动配置package.json
 `npm info webpack` 查看webpack版本信息
+`npm view webpack versions` 查看webpack所有版本
 
 推荐在项目中安装webpack，使用`npx`运行项目中的指令
 
