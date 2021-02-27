@@ -15,3 +15,5 @@ C:\Users\Administrator\AppData\Roaming\npm
 ### 相关知识点
 
 * proxyTable
+* babel 是还没成为标准的语法，或者是刚成为标准，浏览器还未来得及更新的语法
+* Polyfill 是兼容旧浏览器的语法
